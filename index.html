@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />  
+  <title>Pig Dice Game</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css"/>
+  <script src="./JS/jquery-3.3.1.js"></script>
+  <script src="./JS/script.js"></script>
+</head>
+<body>
+  <div class="container">
+   
+    <h1>Pig Dice Game</h1>
+ 
+    <div class="identification">
+      <form>     
+        <h2>Identification</h2>
+        <h3>Please enter the names of the two Players</h3>         
+        <label for="player1"><span>Player One<br></span><input id="idOne" type="text"name ="player1" value=""></label>
+        <label for="player2"><span>Player Two<br></span><input id="idTwo" type="text"name ="player2" value=""></label>         
+     
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+<div class="players">
+    <div class="row"> 
+
+      <div class="col-sm-4 pOne">          
+        <h3 id="playerOneId"></h3>
+        <p id= "playerOneTurnScore">Turn Score:</p>
+        <p id="playerOneTotalScore">Total Score:</p>
+        <p id="playerOneRoll">You Rolled:</p>
+        <div class="pOneButtons">
+          <button class="pOneRollBtn" type="submit">Roll Die</button>
+          <!-- <button class="pOneHoldBtn" type="submit">Hold Score</button> -->
+          <button class="pOneStopBtn" type="submit">Stop Turn</button>
+        </div>
+      </div> 
+
+
+      <div class="col-sm-4 pTwo">            
+        <h3 id="playerTwoId"></h3>
+        <p id= "playerTwoturnScore">Turn Score:</p>
+        <p id="plyerTwototalScore">Total Score:</p>
+        <p id="playerTwoRoll">You Rolled:</p> 
+        <div class="pTwoButtons">
+          <button class="pTwo-roll btn" type="submit">Roll Die</button>
+          <!-- <button class="pTwo-hold btn" type="submit">Hold Score</button> -->
+          <button class="pTwo-stop btn" type="submit">Stop Turn</button>
+        </div>
+      </div>      
+    </div>
+  </div> 
+
+   
+
+  
+  </div>
+</body>
+</html>

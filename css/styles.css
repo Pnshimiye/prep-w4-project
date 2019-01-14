@@ -1,0 +1,28 @@
+
+body{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_4DCgMxmoAWhNtkvA9zqDbMJeOlnSbBoaqpkG3pOwqe5o5xOig);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+
+.pOne{
+  margin: 0px 0px 10px 0px;
+  border: 1px solid rgb(33, 71, 23);
+  padding: 20px;
+}
+.pTwo{
+  margin: 0px 0px 10px 0px;
+  border: 1px solid rgb(33, 71, 23);;
+  padding: 20px;
+}
+.container{
+  margin-top:90px;
+  margin-left: 40px;
+}
+button{
+  background-color: green;
+}
+input{
+  color:black;
+}
