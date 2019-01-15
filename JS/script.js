@@ -19,7 +19,8 @@ Turn.prototype.diceRoller = function(player1, player2) {
       this.total = 0;
       this.endTurn(player1, player2);
       // this.randNumber += randNumber;
-      return randNumber;
+      // return randNumber;
+      alert("You rolled 1!! Your total score is Zero now!!");
   } else {
       this.randNumber += randNumber;
       return randNumber;
