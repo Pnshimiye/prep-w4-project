@@ -18,8 +18,7 @@ Turn.prototype.diceRoller = function(player1, player2) {
   if (randNumber == 1) {
       this.total = 0;
       this.endTurn(player1, player2);
-      // this.randNumber += randNumber;
-      // return randNumber;
+
       alert("You rolled 1!! Your total score is Zero now!!");
   } else {
       this.randNumber += randNumber;
@@ -111,4 +110,6 @@ $(document).ready(function() {
     $('#roll-total').text(currentTurn.total);
   });
 });
+diceRoller();
+
 
