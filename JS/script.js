@@ -1,4 +1,4 @@
-
+// Business logic
 
 function Contact(first,last){
   this.firstName = first;
@@ -35,6 +35,7 @@ Turn.prototype.diceRoller = function(player1, player2) {
   };
 };
 
+// USER INTERFACE
 
 Turn.prototype.endTurn = function(player1, player2) {
   //adding total to score
