@@ -16,22 +16,22 @@ Player.prototype.play = function(){
   var rollScore = 0
   var dices = [dice1, dice2] 
 
-  var dice1 = Math.floor(Math.random()*(6)+1);
-  var dice2 = Math.floor(Math.random()*(6)+1);
+  dices[0] = Math.floor(Math.random()*(6)+1);
+  dices[1] = Math.floor(Math.random()*(6)+1);
 
-  if (dice1 !== 1 && dice2 !== 1){
-    var totalDice = dice1 + dice2;
+  if (dices[0]!== 1 && dices[1] !== 1){
+    var totalDice = dices[0] + dices[1];
     rollScore = totalDice;
     this.turnScore += rollScore;
 
   }else{
     rollScore = 0;
     this.turnScore = 0;
-    return "Hit One";
+    alert("Hit One");
   }
 
-  dices.push(dice1, dice2);
-  return dices;
+  // dices.push(dice1, dice2);
+  // return dices;
 };
 
 Player.prototype.stop = function() {
@@ -61,12 +61,13 @@ Player.prototype.newGame = function(){
 // THIS FUNCTION IS TO INITIATE A NEW GAME
 
 $(document).ready(function(){  
-  $(".players").hide();
+  // $(".players").hide();
   
-  $(".startGame").submit(function(event) {    
+  $(".startGame").submit(function(event){   
     
-    var player1input = $("#idOne").val();
-    var player2input = $("#idTwo").val();
+    var player1input =   $(idOne['input']).val();
+
+    var player1input =   $(idTwo['input']).val();
 
     $("#playerOneId").text(player1input);
     $("#playerTwoId").text(player2input);
@@ -137,7 +138,7 @@ $(document).ready(function(){
 
 
 
-// // PLAYER TWO ROLL AND STOP BUTTON BELOW
+// PLAYER TWO ROLLS AND STOPS BUTTON BELOW
 
       var player2Rolls = function(){
           $("#playerOneRoll").click(function(event) {
@@ -189,8 +190,8 @@ $(document).ready(function(){
         });
       };
 
-          // play();
-          // player1Stops();
-          // player2Rolls();
-          // player2Stops();
+          play();
+          player1Stops();
+          player2Rolls();
+          player2Stops();
       
