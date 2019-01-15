@@ -10,3 +10,18 @@ function Turn(player) {
   this.randNumber = 0;
   this.player = player;
 };
+//Creates random number, saves it and then returns it
+Turn.prototype.diceRoller = function(player1, player2) {
+  var randNumber = Math.floor(Math.random() * 6) + 1;
+  this.total += randNumber;
+
+  if (randNumber == 1) {
+      this.total = 0;
+      this.endTurn(player1, player2);
+      // this.randNumber += randNumber;
+      return randNumber;
+  } else {
+      this.randNumber += randNumber;
+      return randNumber;
+  };
+};
