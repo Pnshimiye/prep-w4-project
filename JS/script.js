@@ -1,3 +1,12 @@
+
+
+function Contact(first,last){
+  this.firstName = first;
+  this.lastName = last;
+}
+
+
+
 //Creates a player and sets initial score to 0
 function Player(userName) {
   this.userName = userName;
@@ -25,6 +34,7 @@ Turn.prototype.diceRoller = function(player1, player2) {
       return randNumber;
   };
 };
+
 
 Turn.prototype.endTurn = function(player1, player2) {
   //adding total to score
