@@ -1,27 +1,134 @@
-body{
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_4DCgMxmoAWhNtkvA9zqDbMJeOlnSbBoaqpkG3pOwqe5o5xOig);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color:white;
+
+h1 {
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 15px;
+  margin: 0;
+  line-height: 0.8;
 }
 
-.pOne{
-  margin: 0px 0px 10px 0px;
-  border: 1px solid rgb(33, 71, 23);
-  padding: 20px;
+h1#top {
+  color: rgb(180, 187, 194);
+  color: rgb(180, 187, 194);
+  color: rgb(180, 187, 194);
+  font-size: 7em;
+
 }
-.pTwo{
-  margin: 0px 0px 10px 0px;
-  border: 1px solid rgb(33, 71, 23);;
-  padding: 20px;
+h1#bottom {
+  color: rgb(180, 187, 194);
+  font-size: 5.2em;
+  margin: 0;
+  padding-top: 0;
 }
-.container{
-  margin-top:90px;
-  margin-left: 40px;
+
+.title {
+  padding: 0;
 }
-button{
-  background-color: green;
+
+
+img.logo {
+  width: 145px;
+  padding-top: 15px;
 }
-input{
-  color:black;
+
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.8em;
+
+}
+
+.active {
+  border: 4px solid rgb(180, 187, 194);
+  border-radius: 10px;
+  color:rgb(40, 106, 167);
+}
+
+.active h3 .player {
+    font-size: 1.2em;
+}
+
+.active h3 {
+    color:rgb(180, 187, 194);
+
+}
+
+.player {
+    /*color: ##FF6699;*/
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Walter Turncoat', cursive;
+
+}
+
+p {
+    margin-top: 25px;
+    font-size: 50;
+}
+
+#players {
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  background: rgba(59, 103, 153, 0.99);
+  border: 10px solid rgb(3, 5, 5);
+  border-radius: 15px;
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-bottom: 50px;
+
+}
+
+body {
+    background-image: url("https://rfclipart.com/image/big/7b-0a-4a/game-dice-background-Download-Royalty-free-Vector-File-EPS-139047.jpg");
+    background: rgb(104, 117, 128);
+    /*border: 10px solid #FF6699;*/
+    color: rgb(14, 12, 12);
+    height: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-weight: 400;
+    font-size: 20px;
+   
+
+}
+
+.btn {
+  /*margin-right: 20px;*/
+  /*border-width: 2px !important;*/
+  padding: 10px 25px;
+}
+
+#roll .btn {
+    color: #fff;
+    background:rgb(99, 110, 121);
+    border: rgb(104, 117, 128);
+    margin-left: -15px;
+}
+
+#end-turn .btn {
+    color: #fff;
+    background: rgb(99, 110, 121);
+    background: rgb(104, 117, 128);
+    border:  rgb(104, 117, 128);
+    margin-left: px;
 }
